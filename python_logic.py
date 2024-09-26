@@ -76,6 +76,46 @@ def random_function_without_purpose():
 
 
     
+# For the last. Objects are the base of OOP, one if the paradigms of Python, and one of the most important ones.
+# Other paradigm of Python is it being functional, and you will see this while we work on the project.
+# OOP (Object Oriented Programming) consists of using Classes and Objects primarily.
+# A class is like a blueprint of an object
+
+# Simple Class
+
+class Caneta:
+    cor: str
+    tampada: bool
+    carga: float
+
+    def __init__(self, cor: str):
+        self.cor = cor
+        self.tampada = True
+        self.carga = 1
+
+    def tampar():
+        self.tampada = True
+
+    def destampar():
+        self.tampada = False
+
+    def escrever():
+        if self.tampada or self.carga == 0:
+            return "Não foi possível escrever"
+        self.carga -= 0.1
+        return "Escrevi com sucesso"
+
+
+
+minha_caneta = Caneta("azul")
+outra_caneta = Caneta("preta")
+outra_caneta.destampar()
+print(minha_caneta.escrever())
+minha_caneta.destampar()
+outra_caneta.tampar()
+print(minha_caneta.escrever())
+
+
 
 
 
