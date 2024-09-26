@@ -16,7 +16,7 @@ conjunto = {1, 2}  # Unique values
 
 
 # Loops and conditionals
-In python we don't have blocks delimiters. We delimit blocks using indents.
+# In python we don't have blocks delimiters. We delimit blocks using indents.
 
 for i in range(10):
     print(i)
