@@ -91,13 +91,13 @@ class Caneta:
     def __init__(self, cor: str):
         self.cor = cor
 
-    def tampar():
+    def tampar(self):
         self.tampada = True
 
-    def destampar():
+    def destampar(self):
         self.tampada = False
 
-    def escrever():
+    def escrever(self):
         if self.tampada or self.carga == 0:
             return "Não foi possível escrever"
         self.carga -= 0.1
