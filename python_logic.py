@@ -85,13 +85,11 @@ def random_function_without_purpose():
 
 class Caneta:
     cor: str
-    tampada: bool
-    carga: float
+    tampada: bool = True
+    carga: float = 1
 
     def __init__(self, cor: str):
         self.cor = cor
-        self.tampada = True
-        self.carga = 1
 
     def tampar():
         self.tampada = True
