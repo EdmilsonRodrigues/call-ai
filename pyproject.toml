@@ -1,4 +1,4 @@
 [tool.ruff]
 line-length = 120
 exclude = ["services/TTS/*", "services/TTS/*/*"]
-
+ignore = ["F401"]

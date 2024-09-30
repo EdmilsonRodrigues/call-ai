@@ -1,9 +1,17 @@
+from TTS.api import TTS
+
+
 class VoiceHandler:
-    api_key: str
-    base_tts_url = "https://api.elevenlabs.io/v1"
+    tts: TTS
 
-    def __init__(self, api_key: str):
-        self.api_key = api_key
+    def __init__(self):
+        self.tts = TTS(model_name="tts_models/en/ljspeech/tacotron2-DDC", progress_bar=False)
 
-    def tts(self, voice_id: str, text: str, chuck_size: int = 1024, output_path: str = "output.mp3"):
-        pass
+    def text_to_speech(self):
+        self.tts.tts_to_file(text="Hello, welcome to the world of open-source text to speech.", file_path="output.wav")
+
+
+if __name__ == "__main__":
+    voice = VoiceHandler()
+
+    voice.text_to_speech()
