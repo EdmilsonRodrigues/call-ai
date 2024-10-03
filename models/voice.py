@@ -7,6 +7,18 @@ class VoiceHandler:
     def __init__(self):
         self.tts = TTS(model_name="tts_models/en/ljspeech/tacotron2-DDC", progress_bar=False)
 
+    def tts(self):
+        pass
+
+    def text_to_numpy_generator(self):
+        pass
+
+    def chunk_audio_generator(self):
+        pass
+
+    def test_output(self):
+        pass
+
     def text_to_speech_test(self):
         self.tts.tts_to_file(text="Hello, welcome to the world of open source text to speech.", file_path="output.wav")
         self.tts.tts_to_file(text="This is a test of speed", file_path="output2.wav")
