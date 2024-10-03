@@ -1,2 +1,3 @@
 aiohttp
-TTS
+git+https://github.com/EdmilsonRodrigues/Trainer-Fork.git@main#egg=Trainer
+git+https://github.com/EdmilsonRodrigues/TTS-Fork.git@dev#egg=TTS
