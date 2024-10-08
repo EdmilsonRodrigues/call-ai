@@ -53,7 +53,7 @@ def pode_votar(idade: int) -> tuple[bool, str]:
     elif idade >= 18 and idade < 60:
         return True, "Tem que votar"
     elif idade >= 60:
-        return True, "Pode votar
+        return True, "Pode votar"
     else:
         return False, "Não pode votar"
 
