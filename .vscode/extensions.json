@@ -2,8 +2,8 @@
     "recommendations": [
         "twixes.pypi-assistant",
         "ms-python.flake8",
-        "ms-python.black",
-        "github.copilot",
+        "pylance",
+        "python",
         "aaron-bond.better-comments",
         "github.vscode-pull-request-github"
     ]
