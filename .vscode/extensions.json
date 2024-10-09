@@ -1,7 +1,6 @@
 {
     "recommendations": [
         "twixes.pypi-assistant",
-        "ms-python.flake8",
         "pylance",
         "python",
         "aaron-bond.better-comments",
