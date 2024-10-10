@@ -1,4 +1,1 @@
 aiohttp
-soundfile==0.12.1
-git+https://github.com/EdmilsonRodrigues/Trainer-Fork.git@main#egg=Trainer
-git+https://github.com/EdmilsonRodrigues/TTS-Fork.git@dev#egg=TTS
