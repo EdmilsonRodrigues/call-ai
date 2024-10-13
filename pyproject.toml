@@ -1,3 +1,8 @@
+[tool.mypy]
+files = "."
+mypy_path = "."
+explicit_package_bases = true
+
 [tool.ruff]
 line-length = 120
 exclude = ["services/TTS/*", "services/TTS/*/*"]
