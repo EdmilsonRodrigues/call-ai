@@ -85,7 +85,7 @@
 # # class Exemplo:
 # #     def __init__(self, x: int) -> None:
 # #         self.x = x
-    
+
 # #     def __str__(self) -> str:
 # #         return str(x)
 
