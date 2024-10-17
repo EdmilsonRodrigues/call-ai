@@ -1,5 +1,8 @@
+from _typeshed import TraceFunction
+from config import BASE_API_URL
 from fastapi import APIRouter, WebSocket, exceptions
 from fastapi.responses import PlainTextResponse
+from starlette.types import ExceptionHandler
 import websockets
 import asyncio
 import io
@@ -34,6 +37,27 @@ async def media_stream(websocket: WebSocket):
 
     finally:
         await websocket.close()
+
+
+async def send_audio_chunks(websocket: WebSocket):
+    while True:
+        try:
+            customer_audio = await websocket.receive_bytes()
+            if customer_audio:
+                return customer_audio
+
+        except Exception as e:
+            print(f"Error receiving audio: {e}")
+
+
+async def generate_audio_chunks():
+    audio_data = [b"audio_chunk_1", b"audio_chunk_2", b"audio_chunk_3"]
+    for chunk in audio_data:
+        yield chunk
+
+
+async def handle_customer_input(customer_audio):
+    print(f"Processing customer input: {customer_audio}")
 
 
 @router.post("/receive-audio/")
