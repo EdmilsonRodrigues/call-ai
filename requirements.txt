@@ -1,0 +1,10 @@
+aiohttp
+aiosqlite
+fastapi
+pydantic
+websockets
+orjson
+uvicorn
+gunicorn
+twilio
+python-dotenv
